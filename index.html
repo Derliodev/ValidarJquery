@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Cotizacion</title>
+</head>
+<body>
+    <main>
+        <h1>Formulario de Cotizacion</h1>
+        <h3>Ingrese los datos para cotizar:</h3>
+        <section>
+            <div class="form">
+                <form action="">
+                    <table>
+                        <tr><td><label for="nombre">Nombre:</label></td></tr>
+                        <tr>
+                            <td><input id="nombre" type="text" name="nombre" placeholder="Juan Andrés"></td>
+                        </tr>
+                        <tr><td><label for="apellido">Apellido:</label></td></tr>
+                        <tr>
+                            <td><input id="apellido" type="text" name="apellido" placeholder="Torres Arancibia"></td>
+                        </tr>
+                        <tr><td><label for="direccion">Direccion:</label></td></tr>
+                        <tr>
+                            <td><input id="direccion" type="text" name="direccion" placeholder="santo domingo 345"></td>
+                        </tr>
+                        <tr><td><label for="email">Email:</label></td></tr>
+                        <tr>
+                            <td><input id="email" type="email" name="email" placeholder="iplacex@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Ancho Piso:</td>
+                            <td>Largo Piso:</td>
+                        </tr>
+                        <tr>
+                            <td><input id="ancho" type="number" placeholder="10"></td>
+                            <td><input id="largo" type="number" placeholder="8"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="send" class="boton" type="button" value="Cotizar">Calcular</button></td>
+                        </tr>
+                        
+                    </table>
+                </form>
+            </div>
+            <div class="result">
+                <h3>m2 Totales</h3>
+                <p id="mtrs">0</p>
+                <h3>Total del Trabajo</h3>
+                <p id="total">$ 0</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
